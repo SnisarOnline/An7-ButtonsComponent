@@ -1,0 +1,358 @@
+#body{
+  margin: 0;
+  padding: 0;
+  color: #ddf;
+  background-color: #112;
+  text-align: center;
+  padding-top: 20vh;
+
+  display flex
+  flex-direction column
+
+  .button {
+    position: relative;
+    display: inline-block;
+    padding: 0.3em;
+    margin: 1em;
+    border: solid 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:before{
+      content: '';
+      position: absolute;
+      border: 1px;
+
+      border-style: solid none; // Первое значение устанавливает стиль верхней и нижней границы, второе — левой и правой.
+      //border-style: solid solid; // Первое значение устанавливает стиль верхней и нижней границы, второе — левой и правой.
+
+      top: -0.4em;
+      left: 0;
+      width: 100%;
+      height: calc(100% + 0.8em);
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      border: 1px;
+
+      border-style: none solid;  // Первое значение устанавливает стиль верхней и нижней границы, второе — левой и правой.
+      //border-style: solid solid;  // Первое значение устанавливает стиль верхней и нижней границы, второе — левой и правой.
+
+      top: 0;
+      left: -0.4em;
+      width: calc(100% + 0.8em);
+      height: 100%;
+    }
+    &:hover {
+      box-shadow: 0 0 5em .5em rgba(50,50,150,0.5);
+      &:before{
+        transform: scaleX(0);
+      }
+      &:after{
+        transform: scaleY(0);
+      }
+      span {
+        background-color: #fff;
+        color: #112;
+        &:before{
+          transform: scaleX(0);
+          opacity: 0;
+        }
+        &:after{
+          transform: scaleY(0);
+          opacity: 0;
+        }
+      }
+    }
+    span {
+      display: inline-block;
+      width: 100%;
+      padding: 0.6em 2em;
+      box-sizing: border-box;
+      &:before{
+        content: '';
+        position: absolute;
+        border: 1px;
+
+        border-style: solid none; // Первое значение устанавливает стиль верхней и нижней границы, второе — левой и правой.
+        //border-style: solid solid; // Первое значение устанавливает стиль верхней и нижней границы, второе — левой и правой.
+
+        top: 0;
+        left: -0.4em;
+        width: calc(100% + 0.8em);
+        height: 100%;
+      }
+      &:after{
+        content: '';
+        position: absolute;
+        border: 1px;
+
+        border-style: none solid; // Первое значение устанавливает стиль верхней и нижней границы, второе — левой и правой.
+        //border-style: solid solid; // Первое значение устанавливает стиль верхней и нижней границы, второе — левой и правой.
+
+        top: -0.4em;
+        left: 0;
+        width: 100%;
+        height: calc(100% + 0.8em);
+      }
+    }
+  }
+
+
+  .button2 {
+    position: relative;
+    display: inline-block;
+    padding: 0.3em;
+    margin: 1em;
+    border: solid 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:before{
+      content: '';
+      position: absolute;
+      border: 1px;
+
+      //border-style: solid none; // Первое значение устанавливает стиль верхней и нижней границы, второе — левой и правой.
+      border-style: solid solid; // Первое значение устанавливает стиль верхней и нижней границы, второе — левой и правой.
+
+      top: -0.4em;
+      left: 0;
+      width: 100%;
+      height: calc(100% + 0.8em);
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      border: 1px;
+
+      //border-style: none solid;  // Первое значение устанавливает стиль верхней и нижней границы, второе — левой и правой.
+      border-style: solid solid;  // Первое значение устанавливает стиль верхней и нижней границы, второе — левой и правой.
+
+      top: 0;
+      left: -0.4em;
+      width: calc(100% + 0.8em);
+      height: 100%;
+    }
+    &:hover {
+      box-shadow: 0 0 5em .5em rgba(50,50,150,0.5);
+      &:before{
+        transform: scaleX(0);
+      }
+      &:after{
+        transform: scaleY(0);
+      }
+      span {
+        background-color: #fff;
+        color: #112;
+        &:before{
+          transform: scaleX(0);
+          opacity: 0;
+        }
+        &:after{
+          transform: scaleY(0);
+          opacity: 0;
+        }
+      }
+    }
+    span {
+      display: inline-block;
+      width: 100%;
+      padding: 0.6em 2em;
+      box-sizing: border-box;
+      &:before{
+        content: '';
+        position: absolute;
+        border: 1px;
+
+        border-style: solid none; // Первое значение устанавливает стиль верхней и нижней границы, второе — левой и правой.
+        //border-style: solid solid; // Первое значение устанавливает стиль верхней и нижней границы, второе — левой и правой.
+
+        top: 0;
+        left: -0.4em;
+        width: calc(100% + 0.8em);
+        height: 100%;
+      }
+      &:after{
+        content: '';
+        position: absolute;
+        border: 1px;
+
+        border-style: none solid; // Первое значение устанавливает стиль верхней и нижней границы, второе — левой и правой.
+        //border-style: solid solid; // Первое значение устанавливает стиль верхней и нижней границы, второе — левой и правой.
+
+        top: -0.4em;
+        left: 0;
+        width: 100%;
+        height: calc(100% + 0.8em);
+      }
+    }
+  }
+
+
+  .button3 {
+    position: relative;
+    display: inline-block;
+    padding: 0.3em;
+    margin: 1em;
+    border: solid 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:before{
+      content: '';
+      position: absolute;
+      border: 1px;
+
+      border-style: solid none; // Первое значение устанавливает стиль верхней и нижней границы, второе — левой и правой.
+      //border-style: solid solid; // Первое значение устанавливает стиль верхней и нижней границы, второе — левой и правой.
+
+      top: -0.4em;
+      left: 0;
+      width: 100%;
+      height: calc(100% + 0.8em);
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      border: 1px;
+
+      border-style: none solid;  // Первое значение устанавливает стиль верхней и нижней границы, второе — левой и правой.
+      //border-style: solid solid;  // Первое значение устанавливает стиль верхней и нижней границы, второе — левой и правой.
+
+      top: 0;
+      left: -0.4em;
+      width: calc(100% + 0.8em);
+      height: 100%;
+    }
+    &:hover {
+      box-shadow: 0 0 5em .5em rgba(50,50,150,0.5);
+      &:before{
+        transform: scaleX(0);
+      }
+      &:after{
+        transform: scaleY(0);
+      }
+      span {
+        background-color: #fff;
+        color: #112;
+        &:before{
+          transform: scaleX(0);
+          opacity: 0;
+        }
+        &:after{
+          transform: scaleY(0);
+          opacity: 0;
+        }
+      }
+    }
+    span {
+      display: inline-block;
+      width: 100%;
+      padding: 0.6em 2em;
+      box-sizing: border-box;
+      &:before{
+        content: '';
+        position: absolute;
+        border: 1px;
+
+        //border-style: solid none; // Первое значение устанавливает стиль верхней и нижней границы, второе — левой и правой.
+        border-style: solid solid; // Первое значение устанавливает стиль верхней и нижней границы, второе — левой и правой.
+
+        top: 0;
+        left: -0.4em;
+        width: calc(100% + 0.8em);
+        height: 100%;
+      }
+      &:after{
+        content: '';
+        position: absolute;
+        border: 1px;
+
+        //border-style: none solid; // Первое значение устанавливает стиль верхней и нижней границы, второе — левой и правой.
+        border-style: solid solid; // Первое значение устанавливает стиль верхней и нижней границы, второе — левой и правой.
+
+        top: -0.4em;
+        left: 0;
+        width: 100%;
+        height: calc(100% + 0.8em);
+      }
+    }
+  }
+}
+
+
+.button,
+.button::before,
+.button::after,
+.button span,
+.button span::before,
+.button span::after
+{
+  transition: all ease .5s;
+}
+.button2,
+.button2::before,
+.button2::after,
+.button2 span,
+.button2 span::before,
+.button2 span::after
+{
+  transition: all ease .5s;
+}
+.button3,
+.button3::before,
+.button3::after,
+.button3 span,
+.button3 span::before,
+.button3 span::after
+{
+  transition: all ease .5s;
+}
+
+//.button::before,
+//.button::after,
+//.button span::before,
+//.button span::after
+//{
+//  content: '';
+//  position: absolute;
+//  border: 1px;
+//}
+//.button::before,
+//.button span::before
+//{
+//  border-style: solid none;
+//}
+//.button::before,
+//.button span::after{
+//  left: 0;
+//  top: -0.4em;
+//  width: 100%;
+//  height: calc(100% + 0.8em);
+//}
+//.button::after,
+//.button span::after
+//{
+//  border-style: none solid;
+//}
+//.button::after,
+//.button span::before
+//{
+//  top: 0;
+//  left: -0.4em;
+//  height: 100%;
+//  width: calc(100% + 0.8em);
+//}
+//.button:hover::after,
+//.button:hover span::after
+//{
+//  transform: scaleY(0);
+//}
+//.button:hover::before,
+//.button:hover span::before
+//{
+//  transform: scaleX(0);
+//}
+//.button:hover span::after,
+//.button:hover span::before {
+//  opacity: 0;
+//}
